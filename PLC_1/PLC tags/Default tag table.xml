@@ -451,7 +451,7 @@
           <ExternalVisible>true</ExternalVisible>
           <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%M0.0</LogicalAddress>
-          <Name>Tag_1</Name>
+          <Name>Tag_Test</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="38" CompositionName="Comment">
