@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2022-09-14T18:02:39.450667Z</Created>
+    <Created>2022-09-14T18:06:41.6779389Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -104,40 +104,19 @@
         <Parameter Name="Out" Section="Output" Type="Bool" />
       </CallInfo>
     </Call>
-    <Call UId="24">
-      <CallInfo Name="Test_VCI" BlockType="FB">
-        <Instance Scope="GlobalVariable" UId="25">
-          <Component Name="Test_VCI_DB_1" />
-        </Instance>
-        <Parameter Name="In" Section="Input" Type="Bool" />
-        <Parameter Name="Out" Section="Output" Type="Bool" />
-      </CallInfo>
-    </Call>
   </Parts>
   <Wires>
-    <Wire UId="29">
+    <Wire UId="25">
       <Powerrail />
       <NameCon UId="22" Name="en" />
     </Wire>
-    <Wire UId="30">
+    <Wire UId="26">
       <IdentCon UId="21" />
       <NameCon UId="22" Name="In" />
     </Wire>
-    <Wire UId="31">
-      <NameCon UId="22" Name="eno" />
-      <NameCon UId="24" Name="en" />
-    </Wire>
-    <Wire UId="32">
+    <Wire UId="27">
       <NameCon UId="22" Name="Out" />
-      <OpenCon UId="26" />
-    </Wire>
-    <Wire UId="33">
-      <OpenCon UId="27" />
-      <NameCon UId="24" Name="In" />
-    </Wire>
-    <Wire UId="34">
-      <NameCon UId="24" Name="Out" />
-      <OpenCon UId="28" />
+      <OpenCon UId="24" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -175,16 +154,28 @@
         <Component Name="Tag_4" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="22" />
+    <Call UId="22">
+      <CallInfo Name="Test_VCI" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="23">
+          <Component Name="Test_VCI_DB_1" />
+        </Instance>
+        <Parameter Name="In" Section="Input" Type="Bool" />
+        <Parameter Name="Out" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="23">
+    <Wire UId="25">
       <Powerrail />
-      <NameCon UId="22" Name="in" />
+      <NameCon UId="22" Name="en" />
     </Wire>
-    <Wire UId="24">
+    <Wire UId="26">
+      <OpenCon UId="24" />
+      <NameCon UId="22" Name="In" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="22" Name="Out" />
       <IdentCon UId="21" />
-      <NameCon UId="22" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
