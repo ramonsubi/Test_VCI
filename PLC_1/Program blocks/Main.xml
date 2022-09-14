@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2022-09-14T23:44:32.7725528Z</Created>
+    <Created>2022-09-14T23:55:58.6161254Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -89,39 +89,18 @@
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>true</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="GlobalVariable" UId="22">
-      <Symbol>
-        <Component Name="Tag_4" />
-      </Symbol>
-    </Access>
-    <Call UId="23">
-      <CallInfo Name="Test_VCI" BlockType="FB">
-        <Instance Scope="GlobalVariable" UId="24">
-          <Component Name="Test_VCI_DB" />
+    <Call UId="21">
+      <CallInfo Name="LAD" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="22">
+          <Component Name="LAD_DB" />
         </Instance>
-        <Parameter Name="In" Section="Input" Type="Bool" />
-        <Parameter Name="Out" Section="Output" Type="Bool" />
       </CallInfo>
     </Call>
   </Parts>
   <Wires>
-    <Wire UId="25">
+    <Wire UId="23">
       <Powerrail />
-      <NameCon UId="23" Name="en" />
-    </Wire>
-    <Wire UId="26">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="In" />
-    </Wire>
-    <Wire UId="27">
-      <NameCon UId="23" Name="Out" />
-      <IdentCon UId="22" />
+      <NameCon UId="21" Name="en" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -155,27 +134,17 @@
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
     <Call UId="21">
-      <CallInfo Name="Test_VCI" BlockType="FB">
+      <CallInfo Name="SCL" BlockType="FB">
         <Instance Scope="GlobalVariable" UId="22">
-          <Component Name="Test_VCI_DB_1" />
+          <Component Name="SCL_DB" />
         </Instance>
-        <Parameter Name="In" Section="Input" Type="Bool" />
-        <Parameter Name="Out" Section="Output" Type="Bool" />
       </CallInfo>
     </Call>
   </Parts>
   <Wires>
-    <Wire UId="25">
+    <Wire UId="23">
       <Powerrail />
       <NameCon UId="21" Name="en" />
-    </Wire>
-    <Wire UId="26">
-      <OpenCon UId="23" />
-      <NameCon UId="21" Name="In" />
-    </Wire>
-    <Wire UId="27">
-      <NameCon UId="21" Name="Out" />
-      <OpenCon UId="24" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
