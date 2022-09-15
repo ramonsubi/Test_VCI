@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2022-09-15T00:31:34.1491257Z</Created>
+    <Created>2022-09-15T00:34:55.5493087Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -96,11 +96,22 @@
         </Instance>
       </CallInfo>
     </Call>
+    <Call UId="23">
+      <CallInfo Name="FB_LAD" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="24">
+          <Component Name="FB_LAD_DB_1" />
+        </Instance>
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="23">
+    <Wire UId="25">
       <Powerrail />
       <NameCon UId="21" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <NameCon UId="21" Name="eno" />
+      <NameCon UId="23" Name="en" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
